@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="cleartype" content="on">
+	
+	<title>VTE</title>
+
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/html5reset.css" media="all">
+	<link rel="stylesheet" href="css/col.css" media="all">
+	<link rel="stylesheet" href="css/style1.css" media="all">
+	<link rel="stylesheet" href="css/2cols.css" media="all">
+	<link rel="stylesheet" href="css/3cols.css" media="all">
+	<link rel="stylesheet" href="css/5cols.css" media="all">
+
+	<style type="text/css">
+
+		body { padding:2em; font : 100%/1.4 'Helvetica Neue', arial, helvetica, helve, sans-serif; background-color: #EBEBEB; }
+		h1 { font-size:2.2em; padding:0 0 .5em 0; }
+		h2 { font-size:1.5em; }
+		.header { padding:1em 0; }
+		.col { background: #ccc; padding:1em 0; text-align:center;}
+
+	</style>
+
+</head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script>
+	$(document).ready(
+		function () {
+
+			$("#0").hover(
+				function(){
+					$("#0").css("background-color", "#BDBDBD");
+				},
+				function(){
+					$("#0").css("background-color","");
+				}
+			);
+
+			$("#1").hover(
+				function(){
+					$("#1").css("background-color", "#BDBDBD");
+				},
+				function(){
+					$("#1").css("background-color","");
+				}
+			);
+
+			$("#2").hover(
+				function(){
+					$("#2").css("background-color", "#BDBDBD");
+				},
+				function(){
+					$("#2").css("background-color","");
+				}
+			);
+
+			$("#3").hover(
+				function(){
+					$("#3").css("background-color", "#BDBDBD");
+				},
+				function(){
+					$("#3").css("background-color","");
+				}
+			);
+
+			$("#4").hover(
+				function(){
+					$("#4").css("background-color", "#BDBDBD");
+				},
+				function(){
+					$("#4").css("background-color","");
+				}
+			);
+
+			$("#5").hover(
+				function(){
+					$("#5").css("background-color", "#BDBDBD");
+				},
+				function(){
+					$("#5").css("background-color","");
+				}
+			);
+
+			$("#6").hover(
+				function(){
+					$("#6").css("background-color", "#BDBDBD");
+				},
+				function(){
+					$("#6").css("background-color","");
+				}
+			);
+
+			$("#7").hover(
+				function(){
+					$("#7").css("background-color", "#BDBDBD");
+				},
+				function(){
+					$("#7").css("background-color","");
+				}
+			);
+
+			$("#8").hover(
+				function(){
+					$("#8").css("background-color", "#BDBDBD");
+				},
+				function(){
+					$("#8").css("background-color","");
+				}
+			);
+
+		}
+	);
+
+</script>
+
+<body>
+
+	<div class="section group">
+		<div class="col span_4_of_5">
+		</div>
+		<div class="col span_1_of_5">
+			<a href="sign.html">
+				<button id="sign">Sign up</button>
+   				<button id="login">Login</button>
+   			</a>
+		</div>
+	</div>
+
+	<div class="section group">
+		<div class="col span_1_of_3">
+		</div>
+		<div class="col span_1_of_3">
+			<img id="logo" src="images/logo.png">
+		</div>
+		<div class="col span_1_of_3">
+		</div>
+	</div>
+
+	<div class="section group">
+		<div class="col span_1_of_3">
+			<div id="about">
+	          <a id="0" href="index.html">ABOUT</a>
+	        </div>
+	        <div id="r1">
+	          <a id="1" href="r1.html">Le Crocodile</a>
+	        </div>
+	        <div id="r2">
+	          <a id="2" href="r2.html">Minami Restaurant</a>
+	        </div>
+	        <div id="r3">
+	          <a id="3" href="r3.html">Miku</a>
+	        </div>
+	        <div id="r4">
+	          <a id="4" href="r4.html">Jade Seafood Restaurant</a>
+	        </div>
+	        <div id="r5">
+	          <a id="5" href="r5.html">C Restaurant</a>
+	        </div>
+	        <div id="r6">
+	          <a id="6" href="r6.html">Chambar</a>
+	        </div>
+	        <div id="r7">
+	          <a id="7" href="r7.html">Five Sails Restaurant</a>
+	        </div>
+	        <div id="r8">
+	          <a id="8" href="r8.html">Blue Water Café</a>
+	        </div>
+		</div>
+		
+		<div class="col span_2_of_3">
+			<div class="section group">
+				<div class="col span_1_of_2">
+					<h3>Sign Up</h3>
+					<label for="name">Name: </label>
+			        <input id="name" type="text" required="true" autofocus="autofocus" /><br/><br/>
+			          
+			        <label for="id">ID: </label>
+			        <input id="id" type="text" maxlength="20" required="true" oninput="checlid(this);"/><br/><br/>
+
+			        <label for="passward">Passward: </label>
+			        <input id="num" type="text" min="6" max="10" required="true" oninput="checknum(this);"/><br/><br/>
+
+			        <label for="email">Email: </label>
+        			<input id="email" type="email" pattern="[^@]+@[^@]+\.[a-z,A-Z]{2,10}" required="true" oninput="checkmail(this);"/><br/><br/>
+			          
+			        <button id="submit" type="submit" value="Submit">Submit</button>
+			        <button type="reset" value="Reset">Reset</button>
+				</div>
+				<div class="col span_1_of_2">
+					<h3>Login</h3>
+			        <label for="id">ID: </label>
+			        <input id="id" type="text" maxlength="20" required="true" oninput="checlid(this);"/><br/><br/>
+
+			        <label for="passward">Passward: </label>
+			        <input id="num" type="text" min="6" max="10" required="true" oninput="checknum(this);"/><br/><br/>
+			          
+			        <button id="submit" type="submit" value="Submit">Submit</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="section group">
+		<div class="col span_1_of_5">
+			<div id="email">
+    		<img src="images/email.png">
+    		<p>Contact us</p>
+    		</div>
+		</div>
+		<div class="col span_4_of_5">
+			<p id="contact">Email:  vtr@gmail.com  Phone:  (604)000-8888    Address:  xxx Main St. Vancouver, BC Canada</p>
+			<p id="copy">copyright © 2015 Vancity’s Top Eight</p>
+		</div>
+	</div>
+
+</body>
+</html>
